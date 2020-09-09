@@ -1,0 +1,64 @@
+:root{
+    --gridWidth: 600px;
+    --gridHeight: 600px;
+
+    --gridRows: 20;
+    --gridColumns: 20;
+}
+
+#main-sidebar {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    display: grid;
+    grid-row-gap: 50px;
+    justify-items: center;
+}
+
+.sidebar-text{
+    text-align: center;
+}
+
+h1 {
+    font-size: 250%;
+    margin: 0px;
+}
+
+p {
+    font-size: 120%;
+    margin: 10px;
+}
+
+#bottom-nav {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    grid-row-gap: 20px;
+    width: 80%;
+}
+
+button {
+    font-size: 18pt;
+}
+
+main {
+    background-color: red;
+    border: solid black;
+    box-shadow: 5px 5px .3px .3px black;
+
+    z-index: -1;
+    display: block;
+    margin: 3% 43%;
+    width: calc(var(--gridWidth) + 100px);
+    height: calc(var(--gridHeight) + 100px);
+}
+
+#container {
+    background-color: white;
+    border: 3px solid rgb(49, 49, 49);
+    display: grid;
+    grid-template-rows: repeat(var(--gridRows), auto);
+    grid-template-columns: repeat(var(--gridColumns), auto);
+    width: var(--gridWidth);
+    height: var(--gridHeight);
+    margin: 50px;
+}

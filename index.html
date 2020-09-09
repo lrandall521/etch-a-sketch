@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etch-A-Sketch</title>
+    <link href="Styles/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="main-sidebar">
+      <nav id="top-nav" class="sidebar">
+        <h1 class="sidebar-text">
+          Etch-A-Sketch
+        </h1>
+        <p class="sidebar-text">
+          by Luke Randall
+        </p>
+      </nav>
+
+      <nav id="bottom-nav" class="sidebar">
+        <button onclick="resetGrid()">Clear</button>
+        <button onclick="resize(0)">Resize</button>
+        <button id="rainbow">Rainbowify</button>
+        <button id="grayscale">Grayscale</button>
+        <button id="default">Default (Blue)</button>
+        <button onclick="resize(20)">Reset</button>
+      </nav>
+    </div>
+
+    <main>
+      <div id="container"></div>
+    </main>
+
+    <script src="Scripts/main.js"></script>
+  </body>
+</html>
